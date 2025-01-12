@@ -76,7 +76,7 @@ app.delete('/api/products/:id', async(req,res) => {
     }
 });
 
-mongoose.connect("mongodb+srv://soniaraj:soniadb@cluster0.h6zef.mongodb.net/NODE-API?retryWrites=true&w=majority&appName=Cluster0")
+mongoose.connect("MONGO_URI")
 .then(()=>{
     console.log("Connected to database");
 })
